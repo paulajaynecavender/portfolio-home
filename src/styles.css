@@ -1,5 +1,7 @@
 header {
   background-color: #aca5bc;
+  display: flex;
+  justify-content: center;
 }
 
 img {

@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <header>
-        <img src={"./assets/logo.png"}></img>
+        <img src={"./assets/sourcecode-upper.png"} alt="logo"></img>
       </header>
     </>
   );

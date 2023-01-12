@@ -3,6 +3,8 @@ $purple: #aca5bc;
 
 header {
   background-color: $purple;
+  display: flex;
+  justify-content: center;
 }
 
 img {
