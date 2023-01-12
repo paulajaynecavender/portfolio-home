@@ -3,4 +3,3 @@ const Work = () => {
 };
 
 export default Work;
-<h1></h1>;
