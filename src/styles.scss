@@ -1,12 +1,52 @@
 // colours
-$purple: #aca5bc;
+$background: #aca5bc;
+$duskypurple: #aca5bc;
 
-header {
-  background-color: $purple;
-  display: flex;
-  justify-content: center;
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Source Code Pro, sans-serif;
+
+  box-sizing: border-box;
 }
 
-img {
-  width: 130px;
+body {
+  background-color: $background;
+}
+.header-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 100px;
+    padding: 5px;
+  }
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  .link {
+    font-size: 60px;
+    text-align: center;
+    padding-top: 100px;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+    text-shadow: 5px 10px 20px black;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-logo {
+    width: 250px;
+  }
 }

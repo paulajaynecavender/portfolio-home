@@ -1,10 +1,14 @@
 import "./styles.css";
+import Home from "./Components/Home";
+
+import Header from "./Components/Header";
 
 function App() {
   return (
     <>
       <header>
-        <img src={"./assets/sourcecode-upper.png"} alt="logo"></img>
+        <Header />
+        <Home />
       </header>
     </>
   );
