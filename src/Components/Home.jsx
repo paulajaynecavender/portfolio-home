@@ -7,18 +7,21 @@ const Home = () => {
     <>
       <BrowserRouter>
         <nav className="links">
-          <Link to="/About" className="link">
-            {" "}
-            About Me
-          </Link>
-          <Link to="/Work" className="link">
-            {" "}
-            My Work
-          </Link>
-          <Link to="/Contact" className="link">
-            {" "}
-            Contact Me
-          </Link>
+          <div className="about box">
+            <Link to="/About" className="link">
+              About Me
+            </Link>
+          </div>
+          <div className="work box">
+            <Link to="/Work" className="link">
+              My Work
+            </Link>
+          </div>
+          <div className="contact box">
+            <Link to="/Contact" className="link">
+              Contact Me
+            </Link>
+          </div>
         </nav>
         <Routes>
           <Route path="/About" element={<About />} />
