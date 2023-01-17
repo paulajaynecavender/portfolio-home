@@ -2,7 +2,7 @@ const AboutMe = () => {
   return (
     <>
       <h3>About Me...Hi..</h3>
-      <div>
+      <div className="about">
         <p>my name is paula </p>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis ut
