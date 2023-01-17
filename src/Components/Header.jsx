@@ -2,10 +2,10 @@ const Header = () => {
   return (
     <>
       <div className="header-logo">
-        <img src={"./assets/georgia-lower.png"} alt="logo"></img>
-        <h1>Paula Jayne Cavender</h1>
+        {/* <img src={"./assets/logo-only.png"} alt="logo"></img> */}
+        <h1>Paula Cavender</h1>
+        <h2> - Front end web developer - </h2>
       </div>
-      <h1>Front end web developer</h1>
     </>
   );
 };

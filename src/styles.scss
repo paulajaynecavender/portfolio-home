@@ -1,6 +1,9 @@
 // colours
 $background: black;
 $duskypurple: #aca5bc;
+$majorHeader: white;
+$minorHeader: #a08ccf;
+$mainText: white;
 
 html {
   font-size: 62.5%;
@@ -8,52 +11,63 @@ html {
 * {
   margin: 0;
   padding: 0;
-  font-family: Georgia, "Times New Roman", Times, serif;
   box-sizing: border-box;
+  font-family: "Dosis", sans-serif;
 }
 
 body {
   background-color: $background;
 }
+
+// header
 .header-logo {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: $duskypurple;
-
+  padding: 20px 5px;
   img {
     width: 100px;
     padding: 5px;
   }
 }
-
 h1 {
+  font-weight: 500;
+  font-size: 40px;
+  color: $majorHeader;
+  text-align: center;
+}
+h2 {
   font-weight: 300;
   font-size: 30px;
+  color: $majorHeader;
+  text-align: center;
 }
 
-.links {
-  display: flex;
-  flex-direction: column;
-
-  .link {
-    font-size: 55px;
-    font-weight: 300;
-    text-decoration: none;
-    color: white;
-    font-family: "Fredericka the Great", cursive;
-  }
+// headings
+h3 {
+  font-weight: 400;
+  color: $majorHeader;
+  text-align: center;
+  font-size: 30px;
+}
+// main text
+p {
+  color: $mainText;
+  font-size: 20px;
+}
+// previews
+.preview {
+  width: 200px;
+  padding-right: 10px;
 }
 .box {
   display: flex;
-  padding: 50px 0 50px 0;
-  justify-content: center;
+  margin: 20px 10px;
 }
-.box:hover {
-  background-color: #aca5bc;
-  .link {
-    transform: scale(0.7);
-  }
+h4 {
+  color: $minorHeader;
+  font-size: 25px;
 }
 
 @media screen and (min-width: 768px) {
@@ -65,8 +79,5 @@ h1 {
     h1 {
       justify-content: center;
     }
-  }
-  .links .link {
-    font-size: 100px;
   }
 }

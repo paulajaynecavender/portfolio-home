@@ -1,5 +1,12 @@
 const Contact = () => {
-  return <h1>Contact Me </h1>;
+  return (
+    <>
+      <h3>Contact Me </h3>
+      <div className="contact">
+        <p>paula.cavender@gmail.com</p>
+      </div>
+    </>
+  );
 };
 
 export default Contact;
