@@ -1,9 +1,15 @@
 // colours
-$background: black;
+$background: white;
 $duskypurple: #aca5bc;
-$majorHeader: white;
+$majorHeader: black;
 $minorHeader: #a08ccf;
-$mainText: white;
+$mainText: black;
+
+// mixins
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
 
 html {
   font-size: 62.5%;
@@ -21,14 +27,12 @@ body {
 
 // header
 .header-logo {
-  display: flex;
-  flex-direction: column;
+  @include flexColumn;
   align-items: center;
   background-color: $duskypurple;
   padding: 20px 5px;
   img {
     width: 100px;
-    padding: 5px;
   }
 }
 h1 {
@@ -58,13 +62,24 @@ p {
 }
 // previews
 .preview {
-  width: 200px;
-  padding-right: 10px;
+  width: 250px;
+  margin-right: 10px;
+  border-radius: 15px;
+}
+.preview:hover,
+.preview:active {
+  transform: rotate(-20deg);
+  cursor: pointer;
+}
+.myWork {
+  @include flexColumn;
 }
 .box {
-  display: flex;
+  @include flexColumn;
   margin: 20px 10px;
+  align-items: center;
 }
+
 h4 {
   color: $minorHeader;
   font-size: 25px;
@@ -79,5 +94,20 @@ h4 {
     h1 {
       justify-content: center;
     }
+  }
+  .preview {
+    width: 350px;
+    img {
+      padding: 5px;
+    }
+  }
+  .preview-text {
+    width: 350px;
+  }
+
+  .box {
+    flex-direction: row;
+    width: 700px;
+    justify-items: center;
   }
 }

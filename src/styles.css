@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: black;
+  background-color: white;
 }
 
 .header-logo {
@@ -22,43 +22,56 @@ body {
 }
 .header-logo img {
   width: 100px;
-  padding: 5px;
 }
 
 h1 {
   font-weight: 500;
   font-size: 40px;
-  color: white;
+  color: black;
   text-align: center;
 }
 
 h2 {
   font-weight: 300;
   font-size: 30px;
-  color: white;
+  color: black;
   text-align: center;
 }
 
 h3 {
   font-weight: 400;
-  color: white;
+  color: black;
   text-align: center;
   font-size: 30px;
 }
 
 p {
-  color: white;
+  color: black;
   font-size: 20px;
 }
 
 .preview {
-  width: 200px;
-  padding-right: 10px;
+  width: 250px;
+  margin-right: 10px;
+  border-radius: 15px;
+}
+
+.preview:hover,
+.preview:active {
+  transform: rotate(-20deg);
+  cursor: pointer;
+}
+
+.myWork {
+  display: flex;
+  flex-direction: column;
 }
 
 .box {
   display: flex;
+  flex-direction: column;
   margin: 20px 10px;
+  align-items: center;
 }
 
 h4 {
@@ -75,5 +88,19 @@ h4 {
   }
   .header-logo h1 {
     justify-content: center;
+  }
+  .preview {
+    width: 350px;
+  }
+  .preview img {
+    padding: 5px;
+  }
+  .preview-text {
+    width: 350px;
+  }
+  .box {
+    flex-direction: row;
+    width: 700px;
+    justify-items: center;
   }
 }/*# sourceMappingURL=styles.css.map */
