@@ -17,8 +17,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #aca5bc;
-  padding: 20px 5px;
+  background-color: #a59db7;
+  padding: 50px 5px;
 }
 .header-logo img {
   width: 100px;
@@ -52,7 +52,6 @@ p {
 
 .preview {
   width: 250px;
-  margin-right: 10px;
   border-radius: 15px;
 }
 
@@ -91,9 +90,7 @@ h4 {
   }
   .preview {
     width: 350px;
-  }
-  .preview img {
-    padding: 5px;
+    margin-right: 10px;
   }
   .preview-text {
     width: 350px;
