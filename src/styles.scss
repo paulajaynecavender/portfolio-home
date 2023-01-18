@@ -84,6 +84,11 @@ p {
   margin: 10px;
   @include flexColumn;
 }
+// about section
+.about {
+  max-width: 900px;
+  margin: 0 auto;
+}
 
 // my work section
 .box {
@@ -151,7 +156,6 @@ p {
 
 @media screen and (min-width: 768px) {
   .main-body {
-    // width: 80vw;
     @include flexColumn;
   }
   // my work section
@@ -170,8 +174,6 @@ p {
     font-size: 30px;
   }
   .box {
-    // flex-direction: row;
-    // width: 700px;
     justify-items: center;
   }
   .contact {
@@ -185,5 +187,12 @@ p {
   .work-container {
     display: grid;
     grid-template-columns: auto auto;
+    max-width: 1500px;
+    margin: 0 auto;
   }
-} ;
+}
+@media screen and (min-width: 1500px) {
+  .work {
+    flex-direction: row;
+  }
+}

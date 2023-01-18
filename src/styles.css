@@ -74,6 +74,11 @@ p {
   flex-direction: column;
 }
 
+.about {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .box {
   display: flex;
   flex-direction: column;
@@ -170,5 +175,12 @@ p {
   .work-container {
     display: grid;
     grid-template-columns: auto auto;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .work {
+    flex-direction: row;
   }
 }/*# sourceMappingURL=styles.css.map */
