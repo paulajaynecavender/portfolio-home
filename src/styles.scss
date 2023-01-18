@@ -75,27 +75,23 @@ h4 {
   font-family: "Amatic SC", cursive;
 }
 
-// main text
+// main text & body
 p {
   color: $mainText;
   font-size: 17px;
 }
-
-// about section
-.about {
+.container {
   margin: 10px;
+  @include flexColumn;
 }
 
 // my work section
-.myWork {
-  @include flexColumn;
-}
 .box {
   @include flexColumn;
   margin: 20px 10px;
   align-items: center;
 }
-.container {
+.overlay-container {
   position: relative;
 }
 .preview {
@@ -115,7 +111,7 @@ p {
   background-color: $duskypurple;
   border-radius: 15px;
 }
-.container:hover .overlay {
+.overlay-container:hover .overlay {
   opacity: 0.85;
 }
 .text {
@@ -135,10 +131,10 @@ p {
 
 // contact section
 .contact {
-  justify-content: center;
-  display: flex;
   .icons {
-    @include flexColumn;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
     p {
       font-size: 16px;
       padding: 5px;
@@ -154,6 +150,10 @@ p {
 }
 
 @media screen and (min-width: 768px) {
+  .main-body {
+    width: 80vw;
+    @include flexColumn;
+  }
   // my work section
   .preview {
     width: 350px;
@@ -165,9 +165,6 @@ p {
   .overlay {
     width: 350px;
     height: 350px;
-  }
-  .container:hover .overlay {
-    opacity: 0.85;
   }
   .text {
     font-size: 30px;

@@ -10,11 +10,11 @@ function App() {
       <header>
         <Header />
       </header>
-      <body>
+      <div className="main-body">
         <AboutMe />
         <Work />
         <Contact />
-      </body>
+      </div>
     </>
   );
 }

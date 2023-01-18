@@ -1,10 +1,10 @@
 const Work = () => {
   return (
     <>
-      <h3>My Work</h3>
-      <div className="myWork">
+      <div className="myWork container">
+        <h3>My Work</h3>
         <div className="work box">
-          <div className="container">
+          <div className="overlay-container">
             <a
               href="https://react-weather-app-paula-cavender.netlify.app/"
               target="_blank"
@@ -28,7 +28,7 @@ const Work = () => {
           </div>
         </div>
         <div className="work box">
-          <div className="container">
+          <div className="overlay-container">
             <a
               href="http://fantasy-football-app.uk/"
               target="_blank"
@@ -50,7 +50,7 @@ const Work = () => {
           </div>
         </div>
         <div className="work box">
-          <div className="container">
+          <div className="overlay-container">
             <a
               href="https://www.google.com"
               target="_blank"
@@ -72,7 +72,7 @@ const Work = () => {
           </div>
         </div>
         <div className="work box">
-          <div className="container">
+          <div className="overlay-container">
             <a
               href="https://www.google.com"
               target="_blank"

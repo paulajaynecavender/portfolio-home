@@ -1,8 +1,8 @@
 const Contact = () => {
   return (
     <>
-      <h3>Contact Me </h3>
-      <div className="contact">
+      <div className="contact container">
+        <h3>Contact Me </h3>
         <div className="icons">
           <a
             href="mailto:paula.cavender@gmail.com"
