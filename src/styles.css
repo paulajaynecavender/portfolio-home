@@ -13,6 +13,11 @@ body {
   background-color: white;
 }
 
+.main-body {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 a:link {
   text-decoration: none;
 }
@@ -83,7 +88,7 @@ p {
 .box {
   display: flex;
   flex-direction: column;
-  margin: 20px 10px;
+  margin: 20px 0;
   align-items: center;
 }
 
@@ -178,12 +183,5 @@ p {
   .work-container {
     display: grid;
     grid-template-columns: auto auto;
-    max-width: 1500px;
-    margin: 0 auto;
-  }
-}
-@media screen and (min-width: 1500px) {
-  .work {
-    flex-direction: row;
   }
 }/*# sourceMappingURL=styles.css.map */

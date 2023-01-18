@@ -26,6 +26,10 @@ html {
 body {
   background-color: $background;
 }
+.main-body {
+  max-width: 900px;
+  margin: 0 auto;
+}
 
 // remove hyperlink underline
 a:link {
@@ -94,7 +98,7 @@ p {
 // my work section
 .box {
   @include flexColumn;
-  margin: 20px 10px;
+  margin: 20px 0;
   align-items: center;
 }
 .overlay-container {
@@ -190,12 +194,5 @@ p {
   .work-container {
     display: grid;
     grid-template-columns: auto auto;
-    max-width: 1500px;
-    margin: 0 auto;
-  }
-}
-@media screen and (min-width: 1500px) {
-  .work {
-    flex-direction: row;
   }
 }
