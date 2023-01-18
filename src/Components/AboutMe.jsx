@@ -1,8 +1,8 @@
 const AboutMe = () => {
   return (
     <>
-      <h3>About Me...Hi..</h3>
       <div className="about">
+        <h3>About Me...Hi..</h3>
         <p>my name is paula </p>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis ut

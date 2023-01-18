@@ -11,6 +11,7 @@ $mainText: black;
   flex-direction: column;
 }
 
+// resets
 html {
   font-size: 62.5%;
 }
@@ -21,8 +22,14 @@ html {
   font-family: "Abel", sans-serif;
 }
 
+// background colour
 body {
   background-color: $background;
+}
+
+// remove hyperlink underline
+a:link {
+  text-decoration: none;
 }
 
 // header
@@ -31,20 +38,17 @@ body {
   align-items: center;
   background-color: $duskypurple;
   padding: 50px 5px;
-  img {
-    width: 100px;
-  }
 }
 h1 {
   font-weight: 500;
-  font-size: 60px;
+  font-size: 70px;
   color: $majorHeader;
   text-align: center;
   font-family: "Amatic SC", sans-serif;
 }
 h2 {
   font-weight: 300;
-  font-size: 30px;
+  font-size: 35px;
   color: $majorHeader;
   text-align: center;
   font-family: "Amatic SC", sans-serif;
@@ -52,22 +56,8 @@ h2 {
 .icons {
   display: flex;
   img {
-    width: 35px;
+    width: 40px;
     margin: 5px;
-  }
-}
-.contact {
-  justify-content: center;
-  display: flex;
-  .icons {
-    @include flexColumn;
-    p {
-      font-size: 12px;
-    }
-    a {
-      display: flex;
-      align-items: center;
-    }
   }
 }
 
@@ -79,25 +69,38 @@ h3 {
   font-size: 30px;
   font-family: "Amatic SC", sans-serif;
 }
+h4 {
+  font-weight: 100;
+  font-size: 25px;
+  font-family: "Amatic SC", cursive;
+}
+
 // main text
 p {
   color: $mainText;
   font-size: 17px;
 }
-// about
+
+// about section
 .about {
   margin: 10px;
 }
-// previews
+
+// my work section
+.myWork {
+  @include flexColumn;
+}
+.box {
+  @include flexColumn;
+  margin: 20px 10px;
+  align-items: center;
+}
 .container {
   position: relative;
 }
 .preview {
   width: 250px;
   border-radius: 15px;
-}
-.preview-text {
-  width: 250px;
 }
 .overlay {
   position: absolute;
@@ -126,33 +129,32 @@ p {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
-.myWork {
-  @include flexColumn;
+.preview-text {
+  width: 250px;
 }
 
-.box {
-  @include flexColumn;
-  margin: 20px 10px;
-  align-items: center;
-}
-
-h4 {
-  color: $duskypurple;
-  font-size: 25px;
-  font-family: "Amatic SC", cursive;
+// contact section
+.contact {
+  justify-content: center;
+  display: flex;
+  .icons {
+    @include flexColumn;
+    p {
+      font-size: 16px;
+      padding: 5px;
+    }
+    a {
+      display: flex;
+      align-items: center;
+    }
+    a:hover {
+      background-color: $duskypurple;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
-  .header-logo {
-    width: 250px;
-    flex-direction: row;
-    width: 100%;
-    float: left;
-    h1 {
-      justify-content: center;
-    }
-  }
+  // my work section
   .preview {
     width: 350px;
     margin-right: 10px;
@@ -160,7 +162,16 @@ h4 {
   .preview-text {
     width: 350px;
   }
-
+  .overlay {
+    width: 350px;
+    height: 350px;
+  }
+  .container:hover .overlay {
+    opacity: 0.85;
+  }
+  .text {
+    font-size: 30px;
+  }
   .box {
     flex-direction: row;
     width: 700px;

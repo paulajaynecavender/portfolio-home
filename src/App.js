@@ -10,9 +10,11 @@ function App() {
       <header>
         <Header />
       </header>
-      <AboutMe />
-      <Work />
-      <Contact />
+      <body>
+        <AboutMe />
+        <Work />
+        <Contact />
+      </body>
     </>
   );
 }

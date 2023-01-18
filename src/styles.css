@@ -13,6 +13,10 @@ body {
   background-color: white;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 .header-logo {
   display: flex;
   flex-direction: column;
@@ -20,13 +24,10 @@ body {
   background-color: #a59db7;
   padding: 50px 5px;
 }
-.header-logo img {
-  width: 100px;
-}
 
 h1 {
   font-weight: 500;
-  font-size: 60px;
+  font-size: 70px;
   color: black;
   text-align: center;
   font-family: "Amatic SC", sans-serif;
@@ -34,7 +35,7 @@ h1 {
 
 h2 {
   font-weight: 300;
-  font-size: 30px;
+  font-size: 35px;
   color: black;
   text-align: center;
   font-family: "Amatic SC", sans-serif;
@@ -44,24 +45,8 @@ h2 {
   display: flex;
 }
 .icons img {
-  width: 35px;
+  width: 40px;
   margin: 5px;
-}
-
-.contact {
-  justify-content: center;
-  display: flex;
-}
-.contact .icons {
-  display: flex;
-  flex-direction: column;
-}
-.contact .icons p {
-  font-size: 12px;
-}
-.contact .icons a {
-  display: flex;
-  align-items: center;
 }
 
 h3 {
@@ -70,6 +55,12 @@ h3 {
   text-align: center;
   font-size: 30px;
   font-family: "Amatic SC", sans-serif;
+}
+
+h4 {
+  font-weight: 100;
+  font-size: 25px;
+  font-family: "Amatic SC", cursive;
 }
 
 p {
@@ -81,6 +72,18 @@ p {
   margin: 10px;
 }
 
+.myWork {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 10px;
+  align-items: center;
+}
+
 .container {
   position: relative;
 }
@@ -88,10 +91,6 @@ p {
 .preview {
   width: 250px;
   border-radius: 15px;
-}
-
-.preview-text {
-  width: 250px;
 }
 
 .overlay {
@@ -122,40 +121,47 @@ p {
   text-align: center;
 }
 
-.myWork {
+.preview-text {
+  width: 250px;
+}
+
+.contact {
+  justify-content: center;
+  display: flex;
+}
+.contact .icons {
   display: flex;
   flex-direction: column;
 }
-
-.box {
+.contact .icons p {
+  font-size: 16px;
+  padding: 5px;
+}
+.contact .icons a {
   display: flex;
-  flex-direction: column;
-  margin: 20px 10px;
   align-items: center;
 }
-
-h4 {
-  color: #a59db7;
-  font-size: 25px;
-  font-family: "Amatic SC", cursive;
+.contact .icons a:hover {
+  background-color: #a59db7;
 }
 
 @media screen and (min-width: 768px) {
-  .header-logo {
-    width: 250px;
-    flex-direction: row;
-    width: 100%;
-    float: left;
-  }
-  .header-logo h1 {
-    justify-content: center;
-  }
   .preview {
     width: 350px;
     margin-right: 10px;
   }
   .preview-text {
     width: 350px;
+  }
+  .overlay {
+    width: 350px;
+    height: 350px;
+  }
+  .container:hover .overlay {
+    opacity: 0.85;
+  }
+  .text {
+    font-size: 30px;
   }
   .box {
     flex-direction: row;

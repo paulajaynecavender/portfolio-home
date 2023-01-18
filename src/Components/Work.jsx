@@ -30,12 +30,12 @@ const Work = () => {
         <div className="work box">
           <div className="container">
             <a
-              href="https://www.google.com"
+              href="http://fantasy-football-app.uk/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
-                src="./assets/weather-app-preview.png"
+                src="./assets/football-preview.png"
                 className="preview"
                 alt="preview"
               ></img>
@@ -45,8 +45,8 @@ const Work = () => {
             </a>
           </div>
           <div className="preview-text">
-            <h4>second project</h4>
-            <p>Second project Description</p>
+            <h4>Fantasy Football App</h4>
+            <p>Team project using react redux and validation</p>
           </div>
         </div>
         <div className="work box">
