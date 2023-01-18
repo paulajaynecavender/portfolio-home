@@ -141,7 +141,6 @@ p {
 
 @media screen and (min-width: 768px) {
   .main-body {
-    width: 80vw;
     display: flex;
     flex-direction: column;
   }
@@ -160,11 +159,16 @@ p {
     font-size: 30px;
   }
   .box {
-    flex-direction: row;
-    width: 700px;
     justify-items: center;
   }
   .contact .icons {
     flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .work-container {
+    display: grid;
+    grid-template-columns: auto auto;
   }
 }/*# sourceMappingURL=styles.css.map */
