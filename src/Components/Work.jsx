@@ -1,3 +1,5 @@
+import { fantasyFootballApp, weatherApp } from "./text";
+
 const Work = () => {
   return (
     <>
@@ -23,9 +25,7 @@ const Work = () => {
             </div>
             <div className="preview-text">
               <h4>Weather App</h4>
-              <p>
-                A react redux weather app using openweatherAPI and geolocation
-              </p>
+              <p>{weatherApp}</p>
             </div>
           </div>
           <div className="work box">
@@ -47,7 +47,7 @@ const Work = () => {
             </div>
             <div className="preview-text">
               <h4>Fantasy Football App</h4>
-              <p>Team project using react redux and validation</p>
+              <p>{fantasyFootballApp}</p>
             </div>
           </div>
           <div className="work box">
