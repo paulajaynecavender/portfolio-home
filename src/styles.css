@@ -79,6 +79,13 @@ p {
   flex-direction: column;
 }
 
+.line-border {
+  border-color: #a59db7;
+  border-style: solid none none none;
+  border-width: 1px;
+  margin: 0 15px;
+}
+
 .about {
   max-width: 900px;
   margin: 0 auto;

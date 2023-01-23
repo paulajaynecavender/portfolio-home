@@ -14,7 +14,7 @@ const Work = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="./assets/weather-app-preview.png"
+                  src="./assets/weather-app-preview2.png"
                   className="preview"
                   alt="preview"
                 ></img>

@@ -12,7 +12,9 @@ function App() {
       </header>
       <div className="main-body">
         <AboutMe />
+        <div className="line-border"></div>
         <Work />
+        <div className="line-border"></div>
         <Contact />
       </div>
     </>
