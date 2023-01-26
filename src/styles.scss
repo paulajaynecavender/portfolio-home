@@ -5,12 +5,6 @@ $majorHeader: black;
 $minorHeader: #a08ccf;
 $mainText: black;
 
-// mixins
-@mixin flexColumn {
-  display: flex;
-  flex-direction: column;
-}
-
 // resets
 html {
   font-size: 62.5%;
@@ -22,12 +16,24 @@ html {
   font-family: "Abel", sans-serif;
 }
 
+// mixins
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+@mixin linksHover {
+  transform: scale(1.2);
+}
+@mixin linksActive {
+  transform: scale(0.9);
+}
+
 // background colour
 body {
   background-color: $background;
 }
 .main-body {
-  max-width: 900px;
+  max-width: 90rem;
   margin: 0 auto;
 }
 
@@ -41,11 +47,11 @@ a:link {
   @include flexColumn;
   align-items: center;
   background-color: $duskypurple;
-  padding: 50px 5px;
+  padding: 5rem 0.5rem;
 }
 h1 {
   font-weight: 500;
-  font-size: 70px;
+  font-size: 7rem;
   color: $majorHeader;
   text-align: center;
   font-family: "Amatic SC", sans-serif;
@@ -60,9 +66,15 @@ h2 {
 .icons {
   display: flex;
   img {
-    width: 40px;
-    margin: 5px;
+    width: 4rem;
+    margin: 0.5rem;
   }
+}
+header .icons img:hover {
+  @include linksHover;
+}
+header .icons img:active {
+  @include linksActive;
 }
 
 // headings
@@ -70,49 +82,48 @@ h3 {
   font-weight: 400;
   color: $majorHeader;
   text-align: center;
-  font-size: 30px;
+  font-size: 3rem;
   font-family: "Amatic SC", sans-serif;
 }
 h4 {
   font-weight: 100;
-  font-size: 25px;
+  font-size: 2.5rem;
   font-family: "Amatic SC", cursive;
 }
 
 // main text & body
 p {
   color: $mainText;
-  font-size: 17px;
+  font-size: 1.7rem;
 }
 .container {
-  margin: 10px;
+  margin: 1rem;
   @include flexColumn;
 }
 .line-border {
   border-color: $duskypurple;
   border-style: solid none none none;
-  border-width: 1px;
-  margin: 0 15px;
+  border-width: 0.1rem;
+  margin: 0 1rem;
 }
 // about section
 .about {
-  max-width: 900px;
+  max-width: 90rem;
   margin: 0 auto;
-  padding: 25px;
+  padding: 2.5rem;
 }
-
 // my work section
 .box {
   @include flexColumn;
-  margin: 20px 0;
+  margin: 2rem 0;
   align-items: center;
 }
 .overlay-container {
   position: relative;
 }
 .preview {
-  width: 250px;
-  border-radius: 15px;
+  width: 25rem;
+  border-radius: 1.5rem;
 }
 .overlay {
   position: absolute;
@@ -120,29 +131,29 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 250px;
-  height: 250px;
+  width: 25rem;
+  height: 25rem;
   opacity: 0;
   transition: 0.5s ease;
   background-color: $duskypurple;
-  border-radius: 15px;
+  border-radius: 1.5rem;
 }
 .overlay-container:hover .overlay {
-  opacity: 0.85;
+  opacity: 0.92;
 }
-.text {
-  color: black;
-  font-size: 20px;
+.overlay-container:active {
+  @include linksActive;
+}
+.arrow {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: center;
 }
 .preview-text {
-  width: 250px;
+  width: 25rem;
 }
 
 // contact section
@@ -152,15 +163,18 @@ p {
     align-items: center;
     width: auto;
     p {
-      font-size: 16px;
-      padding: 5px;
+      font-size: 1.6rem;
+      padding: 0.5rem;
     }
     a {
       display: flex;
       align-items: center;
     }
     a:hover {
-      background-color: $duskypurple;
+      @include linksHover;
+    }
+    a:active {
+      @include linksActive;
     }
   }
 }
@@ -171,18 +185,17 @@ p {
   }
   // my work section
   .preview {
-    width: 350px;
-    margin-right: 10px;
+    width: 35rem;
   }
   .preview-text {
-    width: 350px;
+    width: 35rem;
   }
   .overlay {
-    width: 350px;
-    height: 350px;
+    width: 35rem;
+    height: 35rem;
   }
   .text {
-    font-size: 30px;
+    font-size: 3rem;
   }
   .box {
     justify-items: center;
@@ -191,7 +204,7 @@ p {
     .icons {
       flex-direction: row;
       justify-content: space-evenly;
-      max-width: 700px;
+      max-width: 70rem;
       margin: 0 auto;
     }
   }

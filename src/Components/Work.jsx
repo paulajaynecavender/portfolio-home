@@ -19,7 +19,9 @@ const Work = () => {
                   alt="preview"
                 ></img>
                 <div className="overlay">
-                  <div className="text">Check it out here!</div>
+                  <div className="arrow">
+                    <img src="./assets/arrow.svg" alt="arrow" />
+                  </div>
                 </div>
               </a>
             </div>
@@ -41,7 +43,9 @@ const Work = () => {
                   alt="preview"
                 ></img>
                 <div className="overlay">
-                  <div className="text">Check it out here!</div>
+                  <div className="arrow">
+                    <img src="./assets/arrow.svg" alt="arrow" />
+                  </div>
                 </div>
               </a>
             </div>
@@ -63,7 +67,9 @@ const Work = () => {
                   alt="preview"
                 ></img>
                 <div className="overlay">
-                  <div className="text">Check it out here!</div>
+                  <div className="arrow">
+                    <img src="./assets/arrow.svg" alt="arrow" />
+                  </div>
                 </div>
               </a>
             </div>
@@ -85,7 +91,9 @@ const Work = () => {
                   alt="preview"
                 ></img>
                 <div className="overlay">
-                  <div className="text">Check it out here!</div>
+                  <div className="arrow">
+                    <img src="./assets/arrow.svg" alt="arrow" />
+                  </div>
                 </div>
               </a>
             </div>
