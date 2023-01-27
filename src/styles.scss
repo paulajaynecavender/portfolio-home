@@ -170,7 +170,7 @@ p {
       display: flex;
       align-items: center;
     }
-    a:hover {
+    a img:hover {
       @include linksHover;
     }
     a:active {

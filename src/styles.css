@@ -162,7 +162,7 @@ p {
   display: flex;
   align-items: center;
 }
-.contact .icons a:hover {
+.contact .icons a img:hover {
   transform: scale(1.2);
 }
 .contact .icons a:active {

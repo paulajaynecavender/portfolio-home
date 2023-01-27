@@ -57,7 +57,7 @@ const Work = () => {
           <div className="work box">
             <div className="overlay-container">
               <a
-                href="https://www.google.com"
+                href="https://charming-jelly-8d2da4.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -74,8 +74,8 @@ const Work = () => {
               </a>
             </div>
             <div className="preview-text">
-              <h4>third project</h4>
-              <p>third project Description</p>
+              <h4>CSS & SASS clone</h4>
+              <p>Nowness clone using html css and sass</p>
             </div>
           </div>
           <div className="work box">
