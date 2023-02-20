@@ -4,7 +4,7 @@ const Header = () => {
       <div className="header-logo">
         <h1>Paula Cavender</h1>
         <h2> - Front End Web Developer - </h2>
-        <div className="icons">
+        {/* <div className="icons">
           <a
             href="mailto:paula.cavender@gmail.com"
             target="_blank"
@@ -26,7 +26,7 @@ const Header = () => {
           >
             <img src={"./assets/linkedin2.svg"} alt="linkedin"></img>
           </a>
-        </div>
+        </div> */}
       </div>
     </>
   );

@@ -47,7 +47,8 @@ a:link {
   @include flexColumn;
   align-items: center;
   background-color: $duskypurple;
-  padding: 5rem 0.5rem;
+  padding: 2rem 0.5rem;
+  height: 18vh;
 }
 h1 {
   font-weight: 500;
@@ -94,12 +95,32 @@ h4 {
 // main text & body
 p {
   color: $mainText;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 .container {
   margin: 1rem;
   @include flexColumn;
+  scroll-snap-align: start;
+  height: 82vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.main-body {
+  width: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 82vh;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.main-body::-webkit-scrollbar {
+  display: none;
+}
+
 .line-border {
   border-color: $duskypurple;
   border-style: solid none none none;
@@ -115,15 +136,20 @@ p {
 // my work section
 .box {
   @include flexColumn;
-  margin: 2rem 0;
+  margin: 2rem 2rem;
   align-items: center;
+  width: 15rem;
 }
 .overlay-container {
   position: relative;
 }
+.work-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
 .preview {
-  width: 25rem;
-  border-radius: 1.5rem;
+  width: 15rem;
+  border-radius: 1rem;
 }
 .overlay {
   position: absolute;
@@ -131,12 +157,12 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 25rem;
-  height: 25rem;
+  width: 15rem;
+  height: 15rem;
   opacity: 0;
   transition: 0.5s ease;
   background-color: $duskypurple;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
 }
 .overlay-container:hover .overlay {
   opacity: 0.92;
@@ -153,7 +179,7 @@ p {
   transform: translate(-50%, -50%);
 }
 .preview-text {
-  width: 25rem;
+  width: 15rem;
 }
 
 // contact section
