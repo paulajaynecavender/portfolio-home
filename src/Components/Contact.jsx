@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <>
-      <div className="contact container">
+      <div className="contact container" id="contact">
         <h3>Contact Me </h3>
         <div className="icons">
           <a

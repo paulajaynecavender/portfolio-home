@@ -3,7 +3,7 @@ import { fantasyFootballApp, weatherApp } from "./text";
 const Work = () => {
   return (
     <>
-      <div className="myWork container">
+      <div className="myWork container" id="mywork">
         <h3>My Work</h3>
         <div className="work-container">
           <div className="work box">
@@ -76,6 +76,30 @@ const Work = () => {
             <div className="preview-text">
               <h4>CSS & SASS clone</h4>
               <p>Nowness clone using html css and sass</p>
+            </div>
+          </div>
+          <div className="work box">
+            <div className="overlay-container">
+              <a
+                href="https://www.google.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./assets/weather-app-preview.png"
+                  className="preview"
+                  alt="preview"
+                ></img>
+                <div className="overlay">
+                  <div className="arrow">
+                    <img src="./assets/arrow.svg" alt="arrow" />
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className="preview-text">
+              <h4>fourth project</h4>
+              <p>fourth project Description</p>
             </div>
           </div>
           <div className="work box">
