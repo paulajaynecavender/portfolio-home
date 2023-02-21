@@ -1,17 +1,22 @@
 import { useState } from "react";
 
 const MobileNavBar = () => {
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
   const onClick = (e) => {
     setToggle(!toggle);
   };
+
   return (
     <>
       <div className="hamburger">
-        <img src={"./assets/menu.svg"} alt="menu icon" onClick={onClick}></img>
+        <img
+          src={toggle ? "./assets/cross.svg" : "./assets/menu.svg"}
+          alt="menu icon"
+          onClick={onClick}
+        ></img>
         {toggle ? (
           <nav className="navbar-mobile">
-            <ul className="nav-menu-mobile">
+            <ul className="nav-menu-mobile" onClick={onClick}>
               <li className="nav-item-mobile">
                 <a href="#about" className="nav-link-mobile">
                   ABOUT ME
