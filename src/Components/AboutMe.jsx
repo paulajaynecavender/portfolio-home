@@ -1,7 +1,7 @@
 const AboutMe = () => {
   return (
     <>
-      <div className="about container">
+      <div className="about container" id="about">
         <div className="inner-container">
           <h3>About Me...Hi..</h3>
           <p>my name is paula </p>

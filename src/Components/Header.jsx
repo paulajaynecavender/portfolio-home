@@ -1,12 +1,13 @@
 import MobileNavBar from "./MobileNavBar";
+import NavBar from "./NavBar";
 
 const Header = () => {
   return (
     <>
-      <div className="header-logo" id="about">
+      <div className="header-logo">
         <h1>paula cavender</h1>
         <h2> - FRONT END WEB DEVELOPER - </h2>
-        <MobileNavBar />
+        {window.innerWidth < 767 ? <MobileNavBar /> : <NavBar />}
       </div>
     </>
   );
