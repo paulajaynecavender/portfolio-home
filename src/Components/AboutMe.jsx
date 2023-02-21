@@ -2,7 +2,7 @@ const AboutMe = () => {
   return (
     <>
       <div className="about container">
-        <di className="inner-container">
+        <div className="inner-container">
           <h3>About Me...Hi..</h3>
           <p>my name is paula </p>
           <p>
@@ -14,7 +14,7 @@ const AboutMe = () => {
             quae, tempora labore.
           </p>
           <p>check out my linkedin profile</p>
-        </di>
+        </div>
       </div>
     </>
   );

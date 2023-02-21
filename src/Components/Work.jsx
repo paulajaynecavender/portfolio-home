@@ -1,4 +1,4 @@
-import { fantasyFootballApp, weatherApp } from "./text";
+import { project1, project2, project3, project4 } from "./text";
 
 const Work = () => {
   return (
@@ -28,7 +28,7 @@ const Work = () => {
               </div>
               <div className="preview-text">
                 <h4>Weather App</h4>
-                <p>{weatherApp}</p>
+                <p>{project1}</p>
               </div>
             </div>
             <div className="work box">
@@ -52,7 +52,7 @@ const Work = () => {
               </div>
               <div className="preview-text">
                 <h4>Fantasy Football App</h4>
-                <p>{fantasyFootballApp}</p>
+                <p>{project2}</p>
               </div>
             </div>
             <div className="work box">
@@ -63,7 +63,7 @@ const Work = () => {
                   rel="noopener noreferrer"
                 >
                   <img
-                    src="./assets/weather-app-preview.png"
+                    src="./assets/nowness.png"
                     className="preview"
                     alt="preview"
                   ></img>
@@ -76,7 +76,7 @@ const Work = () => {
               </div>
               <div className="preview-text">
                 <h4>CSS & SASS clone</h4>
-                <p>Nowness clone using html css and sass</p>
+                <p>{project3}</p>
               </div>
             </div>
             <div className="work box">
@@ -100,7 +100,7 @@ const Work = () => {
               </div>
               <div className="preview-text">
                 <h4>fourth project</h4>
-                <p>fourth project Description</p>
+                <p>{project4}</p>
               </div>
             </div>
           </div>

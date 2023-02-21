@@ -4,7 +4,7 @@ const Contact = () => {
       <div className="contact container" id="contact">
         <div className="inner-container">
           <h3>Contact Me </h3>
-          <di className="icons">
+          <div className="icons">
             <a
               href="mailto:paula.cavender@gmail.com"
               target="_blank"
@@ -29,7 +29,7 @@ const Contact = () => {
               <img src={"./assets/linkedin2.svg"} alt="linkedin"></img>
               <p>paulacavender</p>
             </a>
-          </di>
+          </div>
         </div>
       </div>
     </>

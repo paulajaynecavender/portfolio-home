@@ -1,18 +1,12 @@
+import MobileNavBar from "./MobileNavBar";
+
 const Header = () => {
   return (
     <>
       <div className="header-logo" id="about">
         <h1>paula cavender</h1>
         <h2> - FRONT END WEB DEVELOPER - </h2>
-        <nav id="nav">
-          <div class="links-container">
-            <a href="#about">ABOUT ME</a>
-
-            <a href="#mywork">MY WORK</a>
-
-            <a href="#contact">CONTACT</a>
-          </div>
-        </nav>
+        <MobileNavBar />
       </div>
     </>
   );

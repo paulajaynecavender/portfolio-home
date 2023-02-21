@@ -75,14 +75,6 @@ h2 {
   }
 }
 
-#nav {
-  font-size: 1.8rem;
-  a {
-    padding: 0 1.5rem;
-    color: $majorHeader;
-  }
-}
-
 // headings
 h3 {
   font-weight: 400;
@@ -107,7 +99,7 @@ p {
 .container {
   @include flexColumn;
   scroll-snap-align: start;
-  height: 82vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,7 +110,7 @@ p {
   width: 100%;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  height: 82vh;
+  height: 80vh;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
@@ -145,8 +137,10 @@ p {
 .box {
   @include flexColumn;
   margin: 0.5rem 1rem;
-  align-items: center;
   width: 15rem;
+}
+.preview-text {
+  padding: 0.2rem;
 }
 .overlay-container {
   position: relative;
@@ -187,9 +181,6 @@ p {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-// .preview-text {
-//   background-color: #00000080;
-// }
 
 // contact section
 .contact {
