@@ -5,7 +5,7 @@ const Work = () => {
     <>
       <div className="myWork container" id="mywork">
         <div className="inner-container">
-          <h3>My Work</h3>
+          <h3>my work</h3>
           <div className="work-container">
             <div className="work box">
               <div className="overlay-container">

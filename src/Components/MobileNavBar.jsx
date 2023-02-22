@@ -24,6 +24,12 @@ const MobileNavBar = () => {
               </li>
 
               <li className="nav-item-mobile">
+                <a href="#skills" className="nav-link-mobile">
+                  SKILLS
+                </a>
+              </li>
+
+              <li className="nav-item-mobile">
                 <a href="#mywork" className="nav-link-mobile">
                   MY WORK
                 </a>

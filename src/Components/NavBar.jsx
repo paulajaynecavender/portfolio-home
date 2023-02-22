@@ -9,6 +9,12 @@ const NavBar = () => {
         </li>
 
         <li className="nav-item">
+          <a href="#skills" className="nav-link">
+            SKILLS
+          </a>
+        </li>
+
+        <li className="nav-item">
           <a href="#mywork" className="nav-link">
             MY WORK
           </a>

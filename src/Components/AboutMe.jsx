@@ -3,7 +3,7 @@ const AboutMe = () => {
     <>
       <div className="about container" id="about">
         <div className="inner-container">
-          <h3>About Me...Hi..</h3>
+          <h3>about me</h3>
           <p>my name is paula </p>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis ut
