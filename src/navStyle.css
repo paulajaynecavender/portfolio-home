@@ -1,11 +1,7 @@
 li {
   list-style: none;
 }
-a {
-  color: #000;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
+
 a.visited {
   color: #000;
 }
@@ -34,6 +30,9 @@ a.visited {
 }
 .nav-link {
   transition: 0.7s ease;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 .nav-link:hover {
   color: blueviolet;
