@@ -1,3 +1,19 @@
+.about {
+  background-color: #8789c0;
+}
+
+.skills {
+  background-color: #111d4a;
+}
+
+.myWork {
+  background-color: #8380b6;
+}
+
+.contact {
+  background-color: #c2cae8;
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -20,7 +36,6 @@ body {
 
 a:link {
   text-decoration: none;
-  color: #fff;
 }
 
 .header-logo {
@@ -105,18 +120,6 @@ p {
   margin: 0 1rem;
 }
 
-.about {
-  background-color: hsla(263deg, 55%, 39%, 0.502);
-}
-
-.skills {
-  background-color: hsla(18deg, 55%, 39%, 0.502);
-}
-
-.myWork {
-  background-color: hsla(126deg, 55%, 39%, 0.502);
-}
-
 .box {
   display: flex;
   flex-direction: column;
@@ -172,12 +175,10 @@ p {
   transform: translate(-50%, -50%);
 }
 
-.contact {
-  background-color: hsla(196deg, 55%, 39%, 0.502);
-}
 .contact .icons p {
   font-size: 1.8rem;
   padding: 0.5rem;
+  color: #000000;
 }
 .contact .icons a {
   display: flex;
@@ -195,9 +196,6 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-  }
-  h1 {
-    font-size: 6rem;
   }
 }
 @media screen and (min-width: 1024px) {

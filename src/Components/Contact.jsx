@@ -3,7 +3,7 @@ const Contact = () => {
     <>
       <div className="contact container" id="contact">
         <div className="inner-container">
-          <h3>contact me </h3>
+          <h3 id="title">contact me </h3>
           <div className="icons">
             <a
               href="mailto:paula.cavender@gmail.com"

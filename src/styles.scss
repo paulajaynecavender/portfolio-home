@@ -4,6 +4,25 @@ $duskypurple: #a59db7;
 $majorHeader: #000000;
 $minorHeader: #a08ccf;
 $mainText: #fff;
+$colour1: #8789c0;
+$colour2: #45f0df;
+$colour3: #c2cae8;
+$colour4: #8380b6;
+$colour5: #111d4a;
+
+// background section colours
+.about {
+  background-color: $colour1;
+}
+.skills {
+  background-color: $colour5;
+}
+.myWork {
+  background-color: $colour4;
+}
+.contact {
+  background-color: $colour3;
+}
 
 // resets
 html {
@@ -41,14 +60,12 @@ body {
 // remove hyperlink underline
 a:link {
   text-decoration: none;
-  color: $mainText;
 }
 
 // header
 .header-logo {
   @include flexColumn;
   align-items: center;
-  // background-color: $duskypurple;
   height: 20vh;
   color: $majorHeader;
   justify-content: center;
@@ -126,18 +143,7 @@ p {
   border-width: 0.1rem;
   margin: 0 1rem;
 }
-// about section
-.about {
-  background-color: hsla(263, 55%, 39%, 0.502);
-}
-// skills section
-.skills {
-  background-color: hsla(18, 55%, 39%, 0.502);
-}
-// my work section
-.myWork {
-  background-color: hsla(126, 55%, 39%, 0.502);
-}
+
 .box {
   @include flexColumn;
   margin: 0.5rem 1rem;
@@ -188,11 +194,11 @@ p {
 
 // contact section
 .contact {
-  background-color: hsla(196, 55%, 39%, 0.502);
   .icons {
     p {
       font-size: 1.8rem;
       padding: 0.5rem;
+      color: #000000;
     }
     a {
       display: flex;
@@ -213,9 +219,9 @@ p {
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-  h1 {
-    font-size: 6rem;
-  }
+  // h1 {
+  //   font-size: 6rem;
+  // }
 }
 
 @media screen and (min-width: 1024px) {
