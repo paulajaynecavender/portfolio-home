@@ -8,7 +8,7 @@ const Work = () => {
           <h3 id="title">my work</h3>
           <div className="work-container">
             <div className="work box">
-              <div className="overlay-container">
+              <div className="img-container">
                 <a
                   href="https://react-weather-app-paula-cavender.netlify.app/"
                   target="_blank"
@@ -19,10 +19,9 @@ const Work = () => {
                     className="preview"
                     alt="preview"
                   ></img>
+
                   <div className="overlay">
-                    <div className="arrow">
-                      <img src="./assets/arrow.svg" alt="arrow" />
-                    </div>
+                    <img src="./assets/arrow.svg" alt="arrow" />
                   </div>
                 </a>
               </div>
@@ -32,7 +31,7 @@ const Work = () => {
               </div>
             </div>
             <div className="work box">
-              <div className="overlay-container">
+              <div className="img-container">
                 <a
                   href="http://fantasy-football-app.uk/"
                   target="_blank"
@@ -44,9 +43,7 @@ const Work = () => {
                     alt="preview"
                   ></img>
                   <div className="overlay">
-                    <div className="arrow">
-                      <img src="./assets/arrow.svg" alt="arrow" />
-                    </div>
+                    <img src="./assets/arrow.svg" alt="arrow" />
                   </div>
                 </a>
               </div>
@@ -56,7 +53,7 @@ const Work = () => {
               </div>
             </div>
             <div className="work box">
-              <div className="overlay-container">
+              <div className="img-container">
                 <a
                   href="https://charming-jelly-8d2da4.netlify.app/"
                   target="_blank"
@@ -68,9 +65,7 @@ const Work = () => {
                     alt="preview"
                   ></img>
                   <div className="overlay">
-                    <div className="arrow">
-                      <img src="./assets/arrow.svg" alt="arrow" />
-                    </div>
+                    <img src="./assets/arrow.svg" alt="arrow" />
                   </div>
                 </a>
               </div>
@@ -80,7 +75,7 @@ const Work = () => {
               </div>
             </div>
             <div className="work box">
-              <div className="overlay-container">
+              <div className="img-container">
                 <a
                   href="https://www.google.com"
                   target="_blank"
@@ -92,9 +87,7 @@ const Work = () => {
                     alt="preview"
                   ></img>
                   <div className="overlay">
-                    <div className="arrow">
-                      <img src="./assets/arrow.svg" alt="arrow" />
-                    </div>
+                    <img src="./assets/arrow.svg" alt="arrow" />
                   </div>
                 </a>
               </div>
